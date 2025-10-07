@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Sharing Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+    header {
+      background: linear-gradient(135deg, #ff7043, #ff9800);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 70px;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200') center/cover no-repeat;
+      color: white;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    .hero input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+      margin-top: 10px;
+    }
+    .hero button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #ff7043;
+      color: white;
+      margin-left: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background: #e64a19;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px;
+      color: #333;
+    }
+    .card p {
+      margin: 0 10px 15px;
+      font-size: 14px;
+      color: #555;
+    }
+    .features {
+      background: #fff3e0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features h2 {
+      margin-bottom: 20px;
+      color: #ff7043;
+    }
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .feature:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Sharing Website</h1>
+    <p>Discover and share your favorite recipes</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">Categories</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Recipe Hub</h1>
+    <p>Find easy, delicious recipes and share your own!</p>
+    <input type="text" placeholder="Search recipes...">
+    <button>Search</button>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Pasta">
+      <h3>One-Pot Pasta</h3>
+      <p>A quick and tasty pasta dish perfect for weeknights.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.marthastewart.com/thmb/irpFSo-hGcKsW9AtP4ke5vJruGE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSL-1511453-vegan-banana-bread-3x2-52f60a63082147059df51459a98bbae6.jpg" alt="Banana Bread">
+      <h3>Banana Bread</h3>
+      <p>Soft, moist banana bread with a touch of cinnamon.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?w=600" alt="Salad">
+      <h3>Fresh Green Salad</h3>
+      <p>Light and healthy salad with fresh veggies.</p>
+    </div>
+  </div>
+
+  <section class="features">
+    <h2>Why Choose Recipe Hub?</h2>
+    <div class="features-list">
+      <div class="feature">
+        <h3>👩‍🍳 Share Recipes</h3>
+        <p>Upload and share your best recipes with the community.</p>
+      </div>
+      <div class="feature">
+        <h3>⭐ Ratings & Reviews</h3>
+        <p>See feedback from other food lovers before you cook.</p>
+      </div>
+      <div class="feature">
+        <h3>📖 Save Favorites</h3>
+        <p>Bookmark recipes and build your personal cookbook.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Recipe Sharing Website | All rights reserved</p>
+  </footer>
+</body>
+</html>
