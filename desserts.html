@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dessert Recipes | Recipe Sharing Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+    header {
+      background: linear-gradient(135deg, #ff7043, #ff9800);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 70px;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200') center/cover no-repeat;
+      color: white;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px;
+      color: #333;
+    }
+    .card p {
+      margin: 0 10px 15px;
+      font-size: 14px;
+      color: #555;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dessert Recipes</h1>
+    <p>Indulge your sweet tooth with our best desserts</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">Categories</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Sweet Treats Await!</h1>
+    <p>Discover cakes, cookies, pastries and more.</p>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.XdR95joiFhldn3yrNUdSqwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chocolate Cake">
+      <h3>Chocolate Fudge Cake</h3>
+      <p>Rich and moist chocolate cake with fudge frosting.</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.d17071867e79e53ab548bd7ce9946c4e?rik=p7bg0UoAOWDX%2bg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-dMhjmg3NiQ4%2fU74S5oeq4SI%2fAAAAAAAAABA%2fmCCioTor5cM%2fs1600%2fStrawberry-Red-Velvet-Cupcakes1.jpg&ehk=61x5M2gG5hjEKIP%2f0QT2hTQkOibIyWt9kNvpTzv3loY%3d&risl=&pid=ImgRaw&r=0" alt="Cupcakes">
+      <h3>Vanilla Cupcakes</h3>
+      <p>Light and fluffy cupcakes topped with buttercream.</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.b5d5881bc5a9a51390a14565f7bf4356?rik=TKPhmDUP8qR5GQ&riu=http%3a%2f%2fwww.chichilicious.com%2fwp-content%2fuploads%2fcheesecake-recipe2.jpg&ehk=c2kb%2bxRnI%2bWebJ%2fPxrlek%2bbDrFuVGGeTpvR4IfxHtbI%3d&risl=&pid=ImgRaw&r=0" alt="Cheesecake">
+      <h3>New York Cheesecake</h3>
+      <p>Creamy classic cheesecake with a graham crust.</p>
+    </div>
+    <div class="card">
+      <img src="https://static.gregorysfoods.com/images/12318_1200_minicky1.jpg" alt="Cookies">
+      <h3>Chocolate Chip Cookies</h3>
+      <p>Golden-baked cookies with gooey chocolate chips.</p>
+    </div>
+    <div class="card">
+      <img src="https://apronandwhisk.com/wp-content/uploads/2021/04/Fruit-tarts-food-photography-7.jpg" alt="Fruit Tart">
+      <h3>Fresh Fruit Tart</h3>
+      <p>Buttery tart crust filled with cream and topped with fruit.</p>
+    </div>
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.P68JotRqfNNb6c-fVroj4QHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tiramisu">
+      <h3>Classic Tiramisu</h3>
+      <p>Italian dessert layered with mascarpone and espresso.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Recipe Sharing Website | All rights reserved</p>
+  </footer>
+</body>
+</html>
